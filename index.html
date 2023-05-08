@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel manegement </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src=""></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Galley.html">
+
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body>
+    <header>
+    <section id="banner">
+        <img src="images/logo1.jpeg" alt="" class="logo">
+        <div class="banner-text">
+            <h1>Hotel Nandanvan</h1>
+            <p>The perfect place to relax and unwind</p>
+           
+        </div>
+        </section>
+       
+    </header>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Book Your Room</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>  
+        </div>
+       </section>
+       
+				
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+					
+						<ol class="carousel-indicators">
+							  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							  <li data-target="#myCarousel" data-slide-to="1"></li>
+							  <li data-target="#myCarousel" data-slide-to="2"></li>
+							  <li data-target="#myCarousel" data-slide-to="3"></li>
+                              <li data-target="#myCarousel" data-slide-to="4"></li>
+						</ol>
+
+						
+						<div class="carousel-inner img-responsive" >
+							<div class="item active">
+								<img src="images/1.jpg" width="99%">
+								<div class="carousel-caption">
+									
+									
+							
+								</div>
+							</div>
+
+							  <div class="item">
+								<img src="images/2.jpg"width="100%">
+								<div class="carousel-caption">
+									
+									
+									
+								</div>
+							  </div>
+							
+							  <div class="item">
+								<img src="images/3.jpg"width="99%">
+								<div class="carousel-caption">
+									
+								</div>
+							  </div>
+							  
+							  <div class="item">
+								<img src="images/4.jpg" width="100%">
+								<div class="carousel-caption">
+									
+									
+								</div>
+							  </div>
+                              <div class="item">
+								<img src="images/background.jpg" width="100%">
+								<div class="carousel-caption">
+									
+									
+								</div>
+							  </div>
+						</div>
+					</div>	
+				</nav>
+
+
+                <footer>
+                    <div class="footer_container container">
+                      <div class="footer_logo">
+                        <img src="images/logo1.jpeg" alt="logo" width="200px" height="160px" />
+                      </div>
+                      <div class="link_lists">
+                        <h3>Main Links</h3>
+                        <ul>
+                          <li>Room Booking</li>
+                          <li>new changes</li>
+                          <li>Contact Us</li>
+                          <li>News & Blogs</li>
+                        </ul>
+                      </div>
+                      <div class="link_lists">
+                        <h3>Support</h3>
+                        <ul>
+                          <li>About Us</li>
+                          <li>Privacy Policy</li>
+                          <li>Terms & Conditons</li>
+                        </ul>
+                      </div>
+                      <div class="news_letter">
+                        <h3>Support</h3>
+                        <input type="email" placeholder="Enter your Email..." />
+                        <h3>Follow Us</h3>
+                        <div class="icon_container">
+                          <div class="icon">
+                            <i class="fa fa-facebook"></i>
+                          </div>
+                          <div class="icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </div>
+                          <div class="icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </div>
+                          <div class="icon">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+
+    
+        <script src="app.js"></script>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
